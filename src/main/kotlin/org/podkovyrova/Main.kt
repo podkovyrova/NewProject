@@ -8,10 +8,12 @@ fun main(args: Array<String>) {
     var sum: Double = 10.5
     var text: String? = "Hello Kotlin" // убрала защиту от NPE
 
-    value = null;
+//    value = null;
     text = null;
 
-    if(value != null && value >= 5) {
+    var result: Int = value!! + 10
+
+    if(value >= 5) {
         println(">5")
     }
 
