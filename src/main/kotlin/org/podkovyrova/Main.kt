@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     // Можно хранить отрицательные значения
     var value: Int? = 5
     var sum: Double = 10.5
-    var text: String? = "Hello Kotlin" // убрала защиту от NPE
+    var text: String? = "Hello Kotlin" // Убрала защиту от NPE
 
     // Нелья сохранить отрицательные значения
     var valueU: UInt = 5u
