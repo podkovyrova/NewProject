@@ -4,11 +4,15 @@ fun main(args: Array<String>) {
     println("Hello from Kotlin!")
     test("dkkd")
 
+
+    // Можно хранить отрицательные значения
     var value: Int? = 5
     var sum: Double = 10.5
     var text: String? = "Hello Kotlin" // убрала защиту от NPE
 
-//    value = null;
+    // Нелья сохранить отрицательные значения
+    var valueU: UInt = 5u
+
     text = null;
 
     var result: Int = value!! + 10
