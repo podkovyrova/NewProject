@@ -4,16 +4,17 @@ fun main(args: Array<String>) {
     println("Hello from Kotlin!")
     test("dkkd")
 
-    var value: Int = 5
+    var value: Int? = 5
     var sum: Double = 10.5
-    var text: String = "Hello Kotlin"
+    var text: String? = "Hello Kotlin" // убрала защиту от NPE
 
     value = null;
     text = null;
 
-    if (value > 5) {
+    if(value != null && value >= 5) {
         println(">5")
     }
+
 
     when(value) {
         in 1..4 -> {
