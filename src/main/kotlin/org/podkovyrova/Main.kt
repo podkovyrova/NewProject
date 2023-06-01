@@ -85,6 +85,31 @@ fun main(args: Array<String>) {
     for (i in 10 downTo 0) {
         println("i = $i")
     }
+
+    // size в Kotlin аналог length в Java
+    for(i in 0 until arrayText.size) {
+        println("i = $i, value = ${arrayText[i]}")
+    }
+
+    // .indices - лучше использовать для перебора массива
+    for (i in arrayText.indices) {
+        println("i = $i, value = ${arrayText[i]}")
+    }
+
+    // .withIndex() - для использования и индексов, и значений
+    for ((i, value) in arrayText.withIndex()) {
+        println("new i = $i, value = $value")
+    }
+
+    //mainLoop - for внутри for
+    mainLoop@for ((i, value) in arrayText.withIndex()) {
+        for ((i, value) in arrayText.withIndex()) {
+            println("new i = $i, value = $value")
+            continue@mainLoop
+            break@mainLoop
+        }
+    }
+
 }
 
 fun test(text: String): Int{
