@@ -14,19 +14,34 @@ public class Main {
         }
 
         switch (value) {
-            case 1: {
+            case 1:
+            case 10: {
                 break;
             }
             case 5: {
                 System.out.println("5555");
                 break;
             }
-            case 10: {
-                break;
-            }
             default: {
 
             }
+        }
+
+        int[] arrayInt = new int[3];
+        arrayInt[0] = 150;
+        arrayInt[1] = 150;
+        arrayInt[2] = 150;
+
+        int[] arrayIntSec = {4, 10, 3};
+
+        String[] arrayText = new String[3];
+        arrayText[0] = "first";
+        arrayText[1] = "second";
+        arrayText[2] = "third";
+
+        // i++ = i + 1
+        for(int i = 0; i < arrayText.length; i++) {
+            System.out.println(i + " item = " + arrayText[i]);
         }
     }
 
