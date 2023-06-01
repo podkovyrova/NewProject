@@ -43,6 +43,10 @@ public class Main {
         for(int i = 0; i < arrayText.length; i++) {
             System.out.println(i + " item = " + arrayText[i]);
         }
+
+        for(String v : arrayText) {
+            System.out.println("item = " + v + "!");
+        }
     }
 
 }

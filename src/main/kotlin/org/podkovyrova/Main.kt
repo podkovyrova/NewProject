@@ -52,8 +52,38 @@ fun main(args: Array<String>) {
     // Массив из строк
     var arrayText = arrayOf("first", "second", "third")
 
+
     for (it in arrayText) {
         println(it)
+    }
+
+
+
+    // Выполнится 11 раз
+    for (i in 0..10) {
+        println("i = $i")
+    }
+
+    // until - ключевое слово, исключающее последний элемент
+    for (i in 0 until 10) {
+        println("i = $i")
+    }
+
+    // step - пропуск итераций, выполнится 5 раз
+    for (i in 0 until 10 step 2) {
+        println("i = $i")
+    }
+    /*
+    i = 0
+    i = 2
+    i = 4
+    i = 6
+    i = 8
+     */
+
+    // downTo - for в обратную сторону (10, 9, 8, 7, 6 ... 0)
+    for (i in 10 downTo 0) {
+        println("i = $i")
     }
 }
 
